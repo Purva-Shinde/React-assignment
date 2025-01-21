@@ -24,16 +24,16 @@ function Problem2() {
   return (
     <div>
     <button onClick={handleSubmit}>Submit</button>
-      <table>
-        <thead>
-            <tr>
+      <table style={{border:'1px solid black'}}>
+        <thead style={{border:'1px solid black'}}>
+            <tr style={{border:'1px solid black'}}>
                 <th>Name</th>
             </tr>
         </thead>
         <tbody>
         {
             data.map((value,index)=>(
-                <tr  key={index}>
+                <tr style={{border:'1px solid black'}}  key={index}>
 
                 <td style={{display:'flex',justifyContent:"center",alignItems:'center'}}>{value} <p style={{marginLeft:'10px'}} onClick={()=>handleDelete(index)}>Delete</p></td>
 
